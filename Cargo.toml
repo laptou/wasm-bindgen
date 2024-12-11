@@ -124,6 +124,9 @@ members = [
 ]
 resolver = "2"
 
+[workspace.dependencies]
+walrus = { git = "https://github.com/laptou/walrus", branch = "fix/data-segment-names" }
+
 [patch.crates-io]
 js-sys = { path = 'crates/js-sys' }
 wasm-bindgen = { path = '.' }
